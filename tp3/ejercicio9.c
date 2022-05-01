@@ -1,18 +1,18 @@
 #include <stdio.h>
 
 int main(){
-	int numero, promedio;
+	int numero, promedio; 
+	int sumaPositivos = 0;
 	int positivos = 0;
-	int cantidad = 0;
-	int negativos = 0;
-	int menor = 2147483647;
+	int negativos = 0; 
+	int menor = 2147483647; 
 	int mayor = -2147483648;
 	printf("Ingresa un numero: ");
 	scanf("%d",&numero);
 	while(numero != 0){
 		if(numero > 0){
-			positivos += numero;
-			cantidad ++;
+			sumaPositivos += numero;
+			positivos ++;
 		}else{
 			negativos += numero;
 			if(numero > mayor){
@@ -27,14 +27,22 @@ int main(){
 		printf("Ingresa un numero: ");
 		scanf("%d",&numero);
 	}
-	if(cantidad > 0){
-		promedio = positivos / cantidad;
+	if(positivos > 0){
+		promedio = sumaPositivos / positivos;
+		printf("El promedio de los numeros postivos es: %d\n", promedio);
+	}else{
+		printf("No se ingreso positivos\n");
 	}
-	printf("%d\n",positivos);
-	printf("El promedio de los numeros postivos es: %d\n", promedio);
+	if(negativos != 0){
+		printf("El mayor de los negativos es: %d\n", mayor);
+	}else{
+		printf("No se ingreso negativos\n");
+	}
+	if(menor != 2147483647){
+		printf("El menor de los impares es: %d\n", menor);
+	}else{
+		printf("No se ingreso impares\n");
+	}
 	printf("La suma de los negativos es: %d\n", negativos);
-	printf("El mayor de los negativos es: %d\n", mayor);
-	printf("El menor de los impares es: %d\n", menor);
-	
 	return 0;
 }

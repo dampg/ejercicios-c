@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main(){
-	long int decimal, binario = 0, digito, contador = 1;
+	long int decimal, contador = 1, binario = 0;
 	printf("Ingrese un numero: ");
 	scanf("%ld",&decimal);	
 

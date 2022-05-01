@@ -1,27 +1,29 @@
 #include <stdio.h>
 
 int main(){
-	int numero;
-	int opcion;
+	int numero, opcion;
 	int contador = 0;
-	int acumulador = 0;
+	int suma = 0;
 	printf("Ingrese un numero: ");
 	scanf("%d",&numero);
-	acumulador += numero;
+	suma += numero;
 	contador++;
-
-	printf("Ingrese [1] si desea ingresar otro numero: ");
+	printf("\n*Ingrese [1] si desea agregar otro numero\n");
+	printf("*Ingrese [0] para salir\n");
+	printf("Ingrese la opcion elegida: ");
 	scanf("%d",&opcion);
 	while(opcion == 1){
 		printf("Ingrese un numero: ");
 		scanf("%d",&numero);
-		acumulador += numero;
+		suma += numero;
 		contador++;
-		printf("Ingrese [1] si desea ingresar otro numero: ");
+		printf("\n*Ingrese [1] si desea agregar otro numero\n");
+		printf("*Ingrese [0] para salir\n");
+		printf("Ingrese la opcion elegida: ");
 		scanf("%d",&opcion);
 	}
 
 	printf("La cantidad de numeros ingresados es: %d\n", contador);
-	printf("La suma de los numeros ingresados es: %d\n", acumulador);
+	printf("La suma de los numeros ingresados es: %d\n", suma);
 	return 0;
 }

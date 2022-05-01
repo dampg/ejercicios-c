@@ -1,22 +1,22 @@
 #include <stdio.h>
 
 int main(){
-	int numero1, numero2, digito, espejo=0, copia;   
+	int a, b, digito, copia; 
+	int espejo=0;   
 	printf("Ingresa el primer numero: ");
-	scanf("%d",&numero1);
+	scanf("%d",&a);
 	printf("Ingresa el segundo numero: ");
-	scanf("%d",&numero2);
-	copia = numero1;
-   	while( numero1 != 0 ){
-      		digito = numero1 % 10;
+	scanf("%d",&b);
+	copia = a;
+   	while( a != 0 ){
+      		digito = a % 10;
       		espejo = espejo * 10+ digito;
-      		numero1 = numero1 / 10;
+      		a /= 10;
    	}
-	if ( espejo == numero2 ){
-		printf("%d SI espejo de %d", copia, numero2);
+	if ( espejo == b ){
+		printf("%d SI es espejo de %d", copia, b);
 	}else{
-		printf("%d NO espejo de %d", copia, numero2);
+		printf("%d NO es espejo de %d", copia, b);
 	}
-   
 	return 0;
 }

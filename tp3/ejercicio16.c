@@ -1,7 +1,8 @@
 #include <stdio.h>
 
 int main(){
-	int numero, i, suma=0;
+	int numero, i; 
+	int suma=0;
 	printf("Ingrese un numero: ");
 	scanf("%d", &numero);
 	for(i=1;i<numero;i++){
@@ -10,7 +11,7 @@ int main(){
 		}
 	}
 	if(numero==suma){
-		printf("El numero ingresado es perfecto");
+		printf("El numero ingresado SI es perfecto");
 	}else{
 
 		printf("El numero ingresado NO perfecto");

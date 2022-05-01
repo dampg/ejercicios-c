@@ -1,14 +1,10 @@
 #include <stdio.h>
 
 int main(){
-	int numero,suma=0,contador=1,digito,i,copia;
+	int numero, digito, i, copia;
+	int suma=0, contador=1;
 	printf("Ingrese un numero: ");
 	scanf("%d",&numero);
-	while(numero < 0){
-		printf("Debes ingresar un entero positivo!!\n");
-		printf("Ingrese un numero");
-		scanf("%d",&numero);
-	}
 	while(numero!=0){
 		digito=numero%10;
 		copia=digito;

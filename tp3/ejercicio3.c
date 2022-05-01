@@ -4,21 +4,17 @@ int main(){
 	int nota;
 	printf("Ingrese una nota: ");
 	scanf("%d",&nota);
-	while(nota > 100 || nota < 1){
-		printf("!Debe ingresar una nota entre 0  y 100¡\n");
-		printf("Ingrese una nota: ");
-		scanf("%d",&nota);
-	}
 	if( nota < 21 ){
-		printf("E\n");
+		printf("E");
 	}else if(nota > 20 && nota < 41){
-		printf("D\n");
+		printf("D");
 	}else if(nota > 40 && nota < 61){
-		printf("C\n");
+		printf("C");
 	}else if(nota > 60 && nota < 81){
-		printf("B\n");
+		printf("B");
 	}else{
-		printf("A\n");
+		printf("A");
 	}
 	return 0;
 }
+
