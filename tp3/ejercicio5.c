@@ -2,11 +2,9 @@
 
 int main(){
 	char caracter;
-	int codigo;
 	printf("Ingrese un caracter: ");
 	scanf("%c",&caracter);
-	codigo = (int)caracter;
-	switch(codigo){
+	switch(caracter){
 		case 65: 
 		case 97: 
 		case 69: 
@@ -24,4 +22,3 @@ int main(){
 	}
 	return 0;
 }
-

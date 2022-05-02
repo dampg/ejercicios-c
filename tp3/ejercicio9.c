@@ -1,12 +1,13 @@
 #include <stdio.h>
+#include <limits.h>
 
 int main(){
 	int numero, promedio; 
 	int sumaPositivos = 0;
 	int positivos = 0;
 	int negativos = 0; 
-	int menor = 2147483647; 
-	int mayor = -2147483648;
+	int menor = INT_MAX;
+	int mayor = INT_MIN;
 	printf("Ingresa un numero: ");
 	scanf("%d",&numero);
 	while(numero != 0){
@@ -38,7 +39,7 @@ int main(){
 	}else{
 		printf("No se ingreso negativos\n");
 	}
-	if(menor != 2147483647){
+	if(menor != INT_MAX){
 		printf("El menor de los impares es: %d\n", menor);
 	}else{
 		printf("No se ingreso impares\n");
