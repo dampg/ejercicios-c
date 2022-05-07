@@ -12,6 +12,6 @@ int main(){
 		}	
 		i++;
 	}
-	printf("El producto de los %d pares posteriores a -25 es: %ld",pares,producto);
+	printf("El producto de los %d pares posteriores a -25 es: %ld", pares, producto);
 	return 0;
 }

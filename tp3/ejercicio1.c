@@ -10,6 +10,8 @@ int main (){
 	scanf("%d",&c);
 	if(a > b && b > c){
 		printf("Los numeros se ingresaron en orden decreciente");
-	}
+	}else{
+		printf("Los numeros no se ingresaron en orden decreciente");
+  }
 	return 0;
 }
