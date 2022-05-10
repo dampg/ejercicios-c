@@ -8,6 +8,7 @@ int main(){
 	while(numero!=0){
 		digito=numero%10;
 		copia=digito;
+    //potencia
 		for(i=1;i<contador;i++){
 			digito=copia*digito;
 		}
